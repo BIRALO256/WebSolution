@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/layouts.astro'
+import Main from '../components/Main.astro'
+import H1 from '../components/H1.astro'
+
+import Section from '../components/Section.astro'
+---
+
+<Layout title ="services | OneLoveBeauty"
+pageUrl="/services"
+>
+
+ <Main>
+  
+  
+    <H1 text="Explore Our Services" ></H1>
+
+  <Section>
+   
+    <p class="text-blue-500 font-semibold text-lg py-4">We're passionate about helping you look and feel your best. From intricate dreadlock creations to a touch of makeup magic, we offer a variety of services to meet your unique needs.  This is just a glimpse of what we can do for you. Browse through our options and discover the perfect way to pamper yourself.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="service-card shadow-md rounded-md p-4 flex flex-col items-center">
+        <img src="images/Dread.jpg" alt="Dreadlock Creation" class="w-full h-64 object-cover mb-4">
+        
+          <h3 class="text-xl font-bold  text-gray-800">Dreadlock Creation</h3>
+          <p class="text-gray-600">We specialize in creating both natural and artificial dreadlocks. Choose the style that best suits you!</p>
+        
+        
+      </div>
+      <div class="service-card shadow-md rounded-md p-4 flex flex-col items-center">
+        <img src="images/Dread1.jpg" alt="Dreadlock Maintenance" class="w-full h-64 object-cover mb-4">
+        <h3 class="text-xl font-bold  text-gray-800">Dreadlock Maintenance & Repair</h3>
+        <p class="text-gray-600">Keep your dreads healthy and looking their best with our expert retwisting, tightening, and repair services.</p>
+      </div>
+      <div class="service-card shadow-md rounded-md p-4 flex flex-col items-center">
+        <img src="images/Styling.jpg" alt="Dreadlock Styling" class="w-full h-64 object-cover mb-4">
+        <h3 class="text-xl font-bold  text-gray-800">Dreadlock Styling</h3>
+        <p class="text-gray-600">From intricate designs to sleek styles, we can help you customize your dreadlocks to express your unique personality.</p>
+      </div>
+
+
+      <div class="service-card shadow-md rounded-md p-4 flex flex-col items-center">
+        <img src="images/Srub.jpeg" alt="Dreadlock Creation" class="w-full h-64 object-cover mb-4">
+        
+          <h3 class="text-xl font-bold  text-gray-800">Scrub</h3>
+          <p class="text-gray-600">Rejuvenate your skin with our invigorating body and facial scrubs. Choose from a variety of scents to find your perfect match!</p>
+      </div>
+      <div class="service-card shadow-md rounded-md p-4 flex flex-col items-center">
+        <img src="images/Painting.jpg" alt="Dreadlock Maintenance" class="w-full h-64 object-cover mb-4">
+        <h3 class="text-xl font-bold  text-gray-800">Nails Painting</h3>
+        <p class="text-gray-600">Pamper your hands and feet with our expert nail painting services</p>
+      </div>
+      <div class="service-card shadow-md rounded-md p-4 flex flex-col items-center">
+        <img src="images/Makeup.jpg" alt="Dreadlock Styling" class="w-full h-64 object-cover mb-4">
+        <h3 class="text-xl font-bold  text-gray-800">Make Up</h3>
+        <p class="text-gray-600">Natural or dramatic, our makeup artists create looks that enhance your beauty and boost your confidence. Let's get you glowing!</p>
+      </div>
+    </div>
+
+  </Section>
+
+ </Main>
+
+</Layout>

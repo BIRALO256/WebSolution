@@ -1,0 +1,130 @@
+---
+import Header from  '../components/Header.astro';
+import Footer from  '../components/Footer.astro';
+
+import { ViewTransitions } from 'astro:transitions';
+
+import {
+  baseUrl,
+  developer,
+  keywords,
+} from '../scripts/constanst.js'
+
+
+
+interface Props{
+	title?:string;
+	Description?:string;
+	image?:string;
+}
+const {
+	title ="One love Beauty salon",
+	pageUrl = "/",
+	Description ="A dready lock salon found in Makidye ",
+	image ="/images/brand.jpg",
+	
+} = Astro.props;
+//
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        
+		<meta charset="utf-8" />
+		<meta name="description" content={Description}/>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+		/> 
+
+		<!--Website Icon -->
+
+		<!-- Primary Meta Tags -->
+		<meta name="title" content={title} />
+		<meta name="description" content={Description} />
+		<meta name="keywords" content={keywords} />
+		<meta name="author" content={developer.author} />
+		<meta name="copyright" content={developer.copyright} />
+		<meta name="robots" content="index, follow" />
+		<meta name="rating" content="general" />
+
+        <!-- Facebook Open Graph -->
+		<meta property="og:title" content={title} />
+		<meta property="og:site_name" content={title} />
+		<meta property="og:url" content={baseUrl} />
+		<meta property="og:description" content={Description} />
+		<meta property="og:type" content="website" />
+		<!-- <meta property="og:image" content={pageCoverImage} /> -->
+
+
+		<!-- Twitter Open Graph -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:site" content={developer.handle} />
+		<meta name="twitter:creator" content={developer.handle} />
+		<meta name="twitter:description" content={Description} />
+		<!-- <meta name="twitter:image" content={pageCoverImage} /> -->
+		<meta name="twitter:image:alt" content={Description} />
+
+		<!-- iOS meta tags & icons -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content={title} />
+		<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+						
+			<!-- Google tag (gtag.js) -->
+			<script 
+			type="text/partytown"
+			async src="https://www.googletagmanager.com/gtag/js?id=G-1M8QYD78T7"></script>
+			<script
+			type="text/partytown"
+			>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-1M8QYD78T7');
+			</script>
+
+     <!--End of Google analytics -->
+		
+
+	 
+			<!-- Google tag (gtag.js) -->
+			<scriptS8C1
+			type="text/partytown"
+			async src="https://www.googletagmanager.com/gtag/js?id=G-F45WN9"></script>
+			<script
+			type="text/partytown"
+			>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-F45WN9S8C1');
+			</script>
+
+		<title>{title}</title>
+
+		 <!-- fonts -->
+		 <style>
+			@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,700&display=swap");
+		  </style>
+
+		<ViewTransitions/>
+        
+	</head>
+	<body class="min-h-screen  grid grid-rows-[auto,1fr,auto] bg-xephas-white " transition:animate="none">
+
+		<Header pageUrl={pageUrl}/>
+		<slot/>
+		<Footer ></Footer>
+
+		
+	</body>
+</htm>
+
+
