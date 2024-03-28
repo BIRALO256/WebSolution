@@ -9,7 +9,7 @@ export default {
 			},
 			colors: {
 				
-				"jovic": "#0a0a0a",
+				"jovic": "#2c2745",
 				"jovic-white" :"#ffffff",
 				"xephas-navy": "#000525",
 				"xephas-yellow": "#fbaa00",

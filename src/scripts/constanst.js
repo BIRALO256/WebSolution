@@ -7,7 +7,7 @@ export const baseUrl = "https://onelovebeautysalon.com/";
 
 
 // code name
-export const codeName = "OneLoveBeautySalon";
+export const codeName = "WEB SOLUTIONS UGANDA";
 
 
 
@@ -23,6 +23,6 @@ export const year = new Date().getFullYear();
 export const developer = {
   author: codeName,
   copyright: `© ${year} ${codeName}`,
-  footerCollaborator: "Jovic Biralo",
+  footerCollaborator: "WEB SOLUTIONS UGANDA",
   footerUrl: "https://biralo256.github.io/",
 };

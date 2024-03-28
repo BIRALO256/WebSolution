@@ -2,22 +2,20 @@
 ---
 import Layout from '../layouts/layouts.astro'
 import Section from '../components/Section.astro'
-import H1  from '../components/H1.astro'
-import Main from '../components/Main.astro'
 ---
 
-<Layout title ="OneLoveBeauty "
+<Layout title ="WEB SOLUTIONS UGANDA "
 pageUrl="/"
 >
 
   
-  <div class="  md:bg-[url('/images/Screen.jpg')] bg-[url('/images/Phone1.jpg')] bg-cover overflow-hidden h-screen" >  
+  <div class="  md:bg-[url('/images/mobil2.jpg')] bg-[url('/images/Home1.jpg')] bg-cover overflow-hidden h-screen" >  
 
     <div class="text-white text- h-[100dvh]">
 
-      <div class=" bg-gray-800 bg-opacity-50 h-[100%] flex justify-center items-center flex-col">
-        <p class="md:text-6xl  sm:text-4xl lg:text-6xl text-2xl font-bold text-white  pt-28">ONE LOVE BEAUTY SALON</p>
-        <p class="md:text-4xl pt-2 font-thin text-2xl   text-white  ">Dreadlocks for All</p>
+      <div class=" bg-gray-800 bg-opacity-60 h-[100%] flex justify-center items-center flex-col">
+        <p class="md:text-6xl  sm:text-5xl lg:text-6xl text-2xl font-bold text-white  pt-28">WEB SOLUTIONS UGANDA</p>
+        <p class="md:text-4xl pt-2 font-thin text-xl   text-white  ">Empowering Your Online Presence</p>
       </div>
      
     </div>
@@ -25,17 +23,66 @@ pageUrl="/"
 
 </div>
 
-  <Section>
-      
-    <div class="text-center px-4 py-8 md:py-12 lg:px-20 lg:py-16">
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">Dreadlocks. Styled. Elevated.</h1>
-      <p class="text-lg leading-loose text-gray-600">One Love Beauty Salon: Your Dreadlock headquarters. We specialize in creating and caring for healthy, beautiful dread styles. Book your appointment today and unlock your full potential with expert dreadlock care.</p>
+<section class="services bg-gray-100 py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="service hover:shadow-lg rounded-lg p-6">
+        <i class="text-5xl text-blue-500 fas fa-code"></i>
+        <h3 class="text-xl font-bold mt-4">Web Design</h3>
+        <p class="text-gray-700">Create a stunning and user-friendly website that converts.</p>
+      </div>
+      <div class="service hover:shadow-lg rounded-lg p-6">
+        <i class="text-5xl text-green-500 fas fa-server"></i>
+        <h3 class="text-xl font-bold mt-4">Web Hosting</h3>
+        <p class="text-gray-700">Reliable and secure hosting solutions for your website.</p>
+      </div>
+      <div class="service hover:shadow-lg rounded-lg p-6">
+        <i class="text-5xl text-purple-500 fas fa-chart-line"></i>
+        <h3 class="text-xl font-bold mt-4">SEO Marketing</h3>
+        <p class="text-gray-700">Increase your website's visibility and attract more organic traffic.</p>
+      </div>
+      <div class="service hover:shadow-lg rounded-lg p-6">
+        <i class="text-5xl text-orange-500 fas fa-lock"></i>
+        <h3 class="text-xl font-bold mt-4">SSL Certificates</h3>
+        <p class="text-gray-700">Secure your website and build trust with visitors.</p>
+      </div>
+      <div class="service hover:shadow-lg rounded-lg p-6">
+        <i class="text-5xl text-red-500 fas fa-palette"></i>
+        <h3 class="text-xl font-bold mt-4">Branding</h3>
+        <p class="text-gray-700">Develop a strong brand identity that resonates with your audience.</p>
+      </div>
+      <div class="service hover:shadow-lg rounded-lg p-6">
+        <i class="text-5xl text-teal-500 fas fa-rocket"></i>
+        <h3 class="text-xl font-bold mt-4">Content Marketing</h3>
+        <p class="text-gray-700">Create engaging content that attracts and educates your target audience.</p>
+      </div>
     </div>
-    
+  </div>
+</section>
 
-  </Section>
+  
   
 
 </Layout>
 
 
+<style>
+  .services {
+  /* Customize background color and padding as needed */
+}
+
+.service {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.02);
+}
+
+.service i {
+  /* Replace with Font Awesome icons for other services */
+}
+
+</style>
