@@ -6,48 +6,54 @@ import H1 from '../components/H1.astro'
 import Section from '../components/Section.astro'
 ---
 
-<Layout title ="services | OneLoveBeauty"
+<Layout title ="Services | WebSolutionUganda"
 pageUrl="/services"
 >
 
  <Main>
   
   
-    <H1 text="Explore Our Services" ></H1>
+  <H1 text="Explore Our Services" ></H1>
 
- <section class="services bg-gray-100 py-20">
+ <section class="services bg-gray-100 py-10">
+  
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-      <div class="service hover:shadow-lg rounded-lg p-6">
-        <i class="text-5xl text-blue-500 fas fa-code"></i>
-        <h3 class="text-xl font-bold mt-4">Web Design</h3>
-        <p class="text-gray-700">Create a stunning and user-friendly website that converts.</p>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Web Design</h3>
+        <p class="text-gray-700">We design websites that are beautiful & easy to use. Attract visitors, guide them clearly, and achieve your business goals.</p>
       </div>
-      <div class="service hover:shadow-lg rounded-lg p-6">
-        <i class="text-5xl text-green-500 fas fa-server"></i>
-        <h3 class="text-xl font-bold mt-4">Web Hosting</h3>
-        <p class="text-gray-700">Reliable and secure hosting solutions for your website.</p>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Web Hosting</h3>
+        <p class="text-gray-700">Find the perfect home for your website. We offer reliable & secure hosting plans to fit your needs.  In some cases, free options might be available!</p>
       </div>
-      <div class="service hover:shadow-lg rounded-lg p-6">
-        <i class="text-5xl text-purple-500 fas fa-chart-line"></i>
-        <h3 class="text-xl font-bold mt-4">SEO Marketing</h3>
-        <p class="text-gray-700">Increase your website's visibility and attract more organic traffic.</p>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">SEO Marketing</h3>
+        <p class="text-gray-700">Get Found Online. We optimize your website to rank higher in search results, driving organic traffic and boosting your visibility.</p>
       </div>
-      <div class="service hover:shadow-lg rounded-lg p-6">
-        <i class="text-5xl text-orange-500 fas fa-lock"></i>
-        <h3 class="text-xl font-bold mt-4">SSL Certificates</h3>
-        <p class="text-gray-700">Secure your website and build trust with visitors.</p>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">SSL Certificates</h3>
+        <p class="text-gray-700">Keep Your Website Safe & Trusted.  SSL certificates encrypt data and build trust with visitors, protecting your website and your customers.</p>
       </div>
-      <div class="service hover:shadow-lg rounded-lg p-6">
-        <i class="text-5xl text-red-500 fas fa-palette"></i>
-        <h3 class="text-xl font-bold mt-4">Branding</h3>
-        <p class="text-gray-700">Develop a strong brand identity that resonates with your audience.</p>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Branding</h3>
+        <p class="text-gray-700">Stand Out From The Crowd. We craft a unique brand identity that connects with your audience, builds trust, and makes you memorable.</p>
       </div>
-      <div class="service hover:shadow-lg rounded-lg p-6">
-        <i class="text-5xl text-teal-500 fas fa-rocket"></i>
-        <h3 class="text-xl font-bold mt-4">Content Marketing</h3>
-        <p class="text-gray-700">Create engaging content that attracts and educates your target audience.</p>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Content Marketing</h3>
+        <p class="text-gray-700">Attract & Engage Your Audience. We create valuable content that educates, builds trust, and keeps visitors coming back for more.</p>
+      </div>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Mobile development</h3>
+        <p class="text-gray-700">Go Mobile-First. We develop high-performing mobile apps that reach your audience on the go, boosting engagement and brand reach.</p>
+      </div>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Web App Development</h3>
+        <p class="text-gray-700">Turn Your Vision into Reality. We build custom web applications that streamline your processes, enhance user experience, and achieve your business goals.</p>
+      </div>
+      <div class="goal-item bg-white rounded-lg shadow-md p-6 hover:bg-gray-200">
+        <h3 class="text-xl  font-bold mb-2 hover:text-jovic">Video editing</h3>
+        <p class="text-gray-700">Elevate Your Videos. We transform raw footage into professional, engaging videos that captivate your audience and tell your story.</p>
       </div>
     </div>
   </div>
@@ -58,3 +64,23 @@ pageUrl="/services"
  </Main>
 
 </Layout>
+
+<style>
+  .services {
+  /* Customize background color and padding as needed */
+}
+
+.service {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+  transform: scale(1.02);
+}
+
+.service i {
+  /* Replace with Font Awesome icons for other services */
+}
+
+</style>
