@@ -13,7 +13,7 @@ export const codeName = "WEB SOLUTIONS UGANDA";
 
 
 //   these are the keywords that will be used to search engine optimization for the website
-export const keywords = "WebsolutionUganda,WEB SOLUTIONS UGANDA,websites, webapps, videoEditing,WordPress development,eCommerce website development, SEO optimization";
+export const keywords = "WebsolutionUganda,WEB SOLUTIONS UGANDA,websites, affordable websites Uganda,Ugandan web design agency, webapps, videoEditing,WordPress development,eCommerce website development, SEO optimization";
 
 //   year
 export const year = new Date().getFullYear();
