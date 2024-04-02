@@ -2,7 +2,7 @@
 //TODO: add cover image
 // export const coverImage = baseUrl +  "/images/cover.webp";
 
-export const baseUrl = "https://onelovebeautysalon.com/";
+export const baseUrl = "https://websolutionsug-6cd41.web.app/";
 
 
 
