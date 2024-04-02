@@ -17,8 +17,6 @@ class Page {
   export const pages = [
     new Page("/", "home", ["/Home", ""]),
     new Page("/services", "services"),
-    new Page("/about", "about-Us"),
-    new Page("/contact", "Contact-Us"),
     
    
     

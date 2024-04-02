@@ -1,7 +1,8 @@
 
 ---
 import Layout from '../layouts/layouts.astro'
-import Section from '../components/Section.astro'
+import Contact from '../components/Contact.astro'
+
 ---
 
 <Layout title ="WEB SOLUTIONS UGANDA "
@@ -42,14 +43,19 @@ pageUrl="/"
     </div>
   </div>
   <div class="text-center mt-5">
-    <a href="/services" class="btn mt-7 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700">See All Services</a>
+   
+    <div class="text-center mt-10">
+      <p class="text-xl font-bold mb-2">We Offer More Than This</p>
+     <a href="/services"><button class="btn mt-4 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700">See All Services</button></a>
+      
+    </div>
 
   </div>
 </div>
 </section>
 
 
-<section class="faq bg-white py-20">
+<section class=" bg-gray-100 py-5">
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-10">Website vs. Web App: Know the Difference!</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -62,15 +68,13 @@ pageUrl="/"
         <p class="text-gray-700 text-center">This is like an interactive online tool. You can use it to do specific things, like buying stuff online (e.g., shopping cart), checking your bank account, or even making appointments.</p>
       </div>
     </div>
-    <div class="text-center mt-10">
-      <p class="text-xl font-bold mb-2">Need Help Choosing?</p>
-      <p class="text-gray-700">No worries! Contact us, and we'll help you pick the perfect option for your needs.</p>
-     <a href="/contact"><button class="btn mt-4 px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700">Contact Us</button></a>
-      
-    </div>
+    
   </div>
 </section>
 
+
+
+<Contact></Contact>
 
 
 </Layout>

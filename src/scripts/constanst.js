@@ -13,7 +13,7 @@ export const codeName = "WEB SOLUTIONS UGANDA";
 
 
 //   these are the keywords that will be used to search engine optimization for the website
-export const keywords = "OneLoveBeautySalon,onelove,salon, beauty, makyidye,all styles of hair,women hair, Dreads,men's hair";
+export const keywords = "WebsolutionUganda,WEB SOLUTIONS UGANDA,websites, webapps, videoEditing,WordPress development,eCommerce website development, SEO optimization";
 
 //   year
 export const year = new Date().getFullYear();
@@ -23,6 +23,6 @@ export const year = new Date().getFullYear();
 export const developer = {
   author: codeName,
   copyright: `© ${year} ${codeName}`,
-  footerCollaborator: "WEB SOLUTIONS UGANDA",
+  footerCollaborator: "JovicBiralo",
   footerUrl: "https://biralo256.github.io/",
 };
